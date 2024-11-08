@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Name Here</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
+    <!-- -----NAVBAR----- -->
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSideBar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li><a href="">About</a></li>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="./InquiryForm.html" target="_blank">Contact Us</a></li>
+          <li><a href="">More</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#home-section">Home</a></li>
+          <li class="hideOnMobile"><a href="">About</a></li>
+          <li class="hideOnMobile"><a href="#services-section">Services</a></li>
+          <li class="hideOnMobile">
+            <a href="./InquiryForm.html" target="_blank">Contact Us</a>
+          </li>
+          <li class="hideOnMobile"><a href="">More</a></li>
+          <li onclick="showSideBar()">
+            <a href="#" class="menu-button"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- -----HOMEPAGE----- -->
+    <section id="home-section">
+      <div id="home-image"></div>
+      <div class="real">
+        <div class="home-container">
+          <h1 class="home-heading">
+            Transform Your Outdoor Space Into a Beautiful Oasis
+          </h1>
+          <p>
+            Professional landscaping services tailored to enhance your property
+            and lifestyle.<br />
+            Discover why homeowners trust us to create their dream outdoor
+            spaces. See how we bring nature closer to home with each project.
+          </p>
+          <div>
+            <a href="#estimate-container" class="btn btn-show">Estimator</a>
+            <a class="btn btn-read">Read More..</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----Reviews----- -->
+    <section id="services-section">
+      <div class="services-intro">
+        <h2>Exceptional <span>Services We Offer</span></h2>
+        <p>
+          We provide exceptional landscaping services to a wide range of
+          commercial and residential properties for over 35 years, including
+          large corporate environments, city parks, shopping malls, and
+          apartments. Our experienced landscapers set the standard each day in
+          landscape design, paving, and hardscaping. We will whip your yard into
+          shape in no time.
+        </p>
+        <a href="#" class="see-all-services">SEE ALL SERVICES &rarr;</a>
+      </div>
+
+      <div class="services-grid hidden">
+        <div class="service-card">
+          <div class="image-container">
+            <img src="./Images/Services/1.jpg" alt="Lawn & Garden Care" />
+            <div class="overlay">
+              <a href="#" class="find-out-more1">FIND OUT MORE &rarr;</a>
+            </div>
+          </div>
+          <h3>Lawn & Garden Care</h3>
+          <p>
+            We understand that your property is a big investment, and we want
+            our customers to know that we are there for them to help them
+            accomplish the dreams they have for their property...
+          </p>
+          <a href="#" class="find-out-more">FIND OUT MORE &rarr;</a>
+        </div>
+
+        <div class="service-card">
+          <div class="image-container">
+            <img src="./Images/Services/2.jpg" alt="Planting & Removal" />
+            <div class="overlay">
+              <a href="#" class="find-out-more1">FIND OUT MORE &rarr;</a>
+            </div>
+          </div>
+
+          <h3>Planting & Removal</h3>
+          <p>
+            While tree removal is the choice of last resort, it is sometimes
+            most necessary. Sick trees, trees that uproot sidewalks, cause
+            cracks in the foundation, disrupt sewer lines, have sustained...
+          </p>
+          <a href="#" class="find-out-more">FIND OUT MORE &rarr;</a>
+        </div>
+
+        <div class="service-card">
+          <div class="image-container">
+            <img src="./Images/Services/3.jpg" alt="Irrigation & Drainage" />
+            <div class="overlay">
+              <a href="#" class="find-out-more1">FIND OUT MORE &rarr;</a>
+            </div>
+          </div>
+
+          <h3>Irrigation & Drainage</h3>
+          <p>
+            Watering your lawn is key to preserving its lushness and beauty.
+            Whether you are looking for a brand new irrigation system to
+            maintain your lawn or the replacement of a sprinkler...
+          </p>
+          <a href="#" class="find-out-more">FIND OUT MORE &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----Gallery----- -->
+    <section id="gallery-section">
+      <div class="gallery-section-text">
+        <h1>Project Galleries</h1>
+        <p>
+          Browse our portfolio to see a variety of projects, from lush gardens
+          and modern hardscapes to serene water features and cozy patios. Get
+          inspired for your next outdoor transformation!
+        </p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item hidden">
+          <img src="./Images/1.jpg" alt="Modern Garden" />
+          <p class="category">GARDEN, TERRACE</p>
+          <h3>Modern Garden</h3>
+        </div>
+        <div class="gallery-item hidden">
+          <img src="./Images/2.webp" alt="Wooden Decks" />
+          <p class="category">GARDEN</p>
+          <h3>Wooden Decks</h3>
+        </div>
+        <div class="gallery-item hidden">
+          <img src="./Images/3.jpg" alt="Bistro Terrace" />
+          <p class="category">TERRACE</p>
+          <h3>Bistro Terrace</h3>
+        </div>
+        <div class="gallery-item hidden">
+          <img src="./Images/4.webp" alt="Walkout Patio" />
+          <p class="category">PATIO</p>
+          <h3>Walkout Patio</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----About And Estimate----- -->
+    <section id="estimate-container">
+      <!-- About Section -->
+      <div class="about">
+        <h2>About Our Company</h2>
+        <p>
+          The Landscaper is a full-service landscaping company with a
+          straightforward and unique design/build philosophy...
+        </p>
+        <a href="#" style="color: #4eef7e; margin-bottom: 20px"
+          >MORE ABOUT US &gt;</a
+        >
+      </div>
+
+      <!-- Request Estimate Section -->
+      <div class="estimate">
+        <h3>Project Cost Estimator</h3>
+        <input
+          type="number"
+          id="yardSize"
+          name="yardSize"
+          placeholder="Enter Yard Size (sq ft)"
+          required
+        />
+        <label for="designOption">Choose Design Option:</label>
+        <select id="designOption" name="designOption">
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+          <option value="deluxe">Deluxe</option>
+        </select>
+        <button type="button" onclick="calculateCost()">ESTIMATE COST</button>
+        <p id="result"></p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="wcu-section">
+      <div class="why-choose-us">
+        <h3>Why Choose Us?</h3>
+        <div class="features">
+          <div class="feature">
+            <h4>Specialized Company</h4>
+            <p>
+              We are a landscaping company specializing in residential and
+              commercial landscaping.
+            </p>
+          </div>
+          <div class="feature">
+            <h4>Licensed & Insured</h4>
+            <p>
+              Our landscapers are fully licensed, bonded, and insured for their
+              safety.
+            </p>
+          </div>
+          <div class="feature">
+            <h4>Dependable Services</h4>
+            <p>
+              We take pride in our work and complete each project on time and
+              within budget.
+            </p>
+          </div>
+          <div class="feature">
+            <h4>Day Scheduling</h4>
+            <p>Regular appointments on the same day and time each week.</p>
+          </div>
+          <div class="feature">
+            <h4>Free Consultations</h4>
+            <p>We offer free consultations to provide an actual quote.</p>
+          </div>
+          <div class="feature">
+            <h4>Reputable Company</h4>
+            <p>
+              Operating for more than 30 years, with a reputation for service
+              and quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonials-section">
+      <h2>Client Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <p>
+              "We found The Landscaper a pleasure to work with. The staff was
+              friendly, hardworking, and completed the projects within the
+              agreed time. Our own ideas were carefully listened to and
+              reflected in the design."
+            </p>
+            <div class="author">Ahsan</div>
+            <div class="location">Lahore, Punjab</div>
+          </div>
+          <div class="testimonial">
+            <p>
+              "I wanted to take this opportunity to thank you for the excellent
+              service your company provides. Our yard always looks perfect when
+              you're done. You are very thorough and always go the extra mile.
+              Thanks again!"
+            </p>
+            <div class="author">Arhum</div>
+            <div class="location">Hyderabad, Sindh</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="arrow arrow-left hidden" onclick="prevSlide()">
+          &#10094;
+        </button>
+        <button class="arrow arrow-right" onclick="nextSlide()">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="f-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            The Landscaper is a custom made website built solely for showcase
+            purposes like portfolio, assignments. This can not be used for
+            commercial purposes or etc cuz there is reference from other
+            websites.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Extra Navigation</h3>
+          <p><a href="#">Documentation</a></p>
+          <p><a href="#">Make Appointment</a></p>
+          <p><a href="#">Case Study</a></p>
+          <p><a href="#">Frequently Asked Questions</a></p>
+          <p><a href="#">Prices & Delivery</a></p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Services</h3>
+          <p><a href="#">Lawn & Garden Care</a></p>
+          <p><a href="#">Planting & Removal</a></p>
+          <p><a href="#">Irrigation & Drainage</a></p>
+          <p><a href="#">Snow & Ice Removal</a></p>
+          <p><a href="#">Spring & Fall Cleanup</a></p>
+        </div>
+
+        <div class="footer-column working-hours">
+          <h3>Working Hours</h3>
+          <p><span>Monday</span> 07:00 - 17:00</p>
+          <p><span>Tuesday</span> 07:00 - 17:00</p>
+          <p><span>Wednesday</span> 07:00 - 17:00</p>
+          <p><span>Thursday</span> 07:00 - 17:00</p>
+          <p>
+            <span>Friday</span>
+            <strong style="color: #4eef7e">07:00 - 17:00</strong>
+          </p>
+          <p><span>Saturday</span> 07:00 - 17:00</p>
+          <p><span>Sunday</span> <strong class="closed">CLOSED</strong></p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom" style="text-align: center; margin-top: 20px">
+        <p>
+          &copy; 2024 The Landscaper Website By
+          <a href="#">Ahsan Shafi</a>
+        </p>
+        <p>For emergency tree removal <strong>123-456-789</strong></p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
